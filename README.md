@@ -1,22 +1,71 @@
-# Verifeye: Agentic Forensic Auditor 🕵️‍♂️
-**Built for OpenAI Codex Community Hackathon - Delhi**
+Verifeye: Agentic Forensic Auditor 🕵️‍♂️
+Submission for OpenAI Codex Community Hackathon - Delhi
 
-Verifeye is an autonomous Agentic Auditor designed to detect "Revenue Leakage" in Indian SMEs. It uses GPT-4o-mini to cross-reference invoices against Master Service Agreements (MSAs) using a chain-of-thought agentic workflow.
+Verifeye is an autonomous AI Agent designed to combat "Revenue Leakage" in Indian SMEs. By moving beyond static scripts to a truly Agentic Workflow, Verifeye cross-references unstructured invoice data against legal Master Service Agreements (MSAs) to identify financial discrepancies, tax non-compliance, and billing fraud.
 
-## 🚀 Key Features
-- **Agentic Skill-Calling:** Autonomously triggers `verify_gstin` and `calculate_tax_variance` tools.
-- **Forensic Logs:** Real-time transparency into the agent's reasoning process.
-- **Auto-Remediation:** Generates professional legal/financial recovery notices instantly.
-- **Sleek UI:** High-fidelity dark-mode dashboard for CFO-level insights.
+🛑 The Problem
+Indian mid-market firms lose 2-5% of annual revenue to manual billing errors and sophisticated vendor overcharges. Manual auditing is:
 
-## 🛠 Tech Stack
-- **Brain:** OpenAI GPT-4o-mini API
-- **Logic:** Python (Agentic Framework)
-- **Frontend:** Streamlit (Custom CSS)
-- **Data:** JSON-based forensic datasets
+Slow: Taking days to cross-check line items against complex contracts.
 
-## 🏃‍♂️ How to Run
-1. Clone the repo.
-2. Install dependencies: `pip install streamlit openai pandas`.
-3. Set your API Key: `export OPENAI_API_KEY='your_key_here'`.
-4. Run the app: `streamlit run app.py`.
+Error-Prone: Missing subtle tax variance or unauthorized rate inflation.
+
+Passive: Finding the error but leaving the "recovery" process to humans.
+
+✅ The Solution: Verifeye
+Verifeye doesn't just scan; it investigates. Built on GPT-4o, the agent uses a chain-of-thought process to autonomously decide which tools to use to validate an invoice's legitimacy.
+
+🌟 Key Features
+Agentic Reasoning: Real-time "Thought Traces" show the AI's internal logic as it audits line items.
+
+Autonomous Skill-Calling: The agent calls specialized Python "Skills" (Plugins) for:
+
+GSTIN Validation: Checking vendor legitimacy against simulated government records.
+
+Tax Variance Engine: Calculating precise INR leakage from incorrect tax slabs.
+
+Rate Card Parser: Detecting unauthorized price hikes per service category.
+
+Auto-Remediation: Generates a professional, legally-sound demand letter for the CFO to reclaim lost funds instantly.
+
+Sleek Forensic UI: A premium dark-mode dashboard designed for high-stakes financial environments.
+
+🛠 Tech Stack
+LLM: OpenAI GPT-4o (via Official Python SDK)
+
+Backend: Python 3.10+
+
+Frontend: Streamlit (Custom CSS-injected Dark Mode)
+
+Data Handling: Pandas & JSON
+
+Agent Architecture: Function Calling / Tool Selection
+
+🚀 Getting Started
+1. Prerequisites
+Ensure you have an OpenAI API Key.
+
+Bash
+pip install streamlit openai pandas
+2. Set Environment Variables
+Bash
+# Windows (PowerShell)
+$env:OPENAI_API_KEY="your-key-here"
+
+# Mac/Linux/Bash
+export OPENAI_API_KEY="your-key-here"
+3. Run the Application
+Bash
+streamlit run app.py
+📂 Project Structure
+app.py: The high-fidelity dashboard and frontend logic.
+
+auditor_agent.py: The "Brain"—OpenAI agentic workflow and tool-calling loop.
+
+skills.py: Modular Python tools used by the Agent.
+
+invoices.json & contracts.json: Forensic datasets with injected "fraud" scenarios for demo purposes.
+
+👤 Author
+Shubham Prasad
+Delhi Technological University (DTU)
