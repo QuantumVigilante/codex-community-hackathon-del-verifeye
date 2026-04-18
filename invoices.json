@@ -1,0 +1,102 @@
+[
+    {
+        "invoice_id": "INV-2026-001",
+        "vendor_name": "Apex IT Solutions",
+        "date": "2026-03-29",
+        "line_items": [
+            {
+                "description": "Cloud Consulting",
+                "hours": 12,
+                "billed_rate": 4200,
+                "tax_charged": 9072.0
+            },
+            {
+                "description": "Server Maintenance",
+                "hours": 8,
+                "billed_rate": 2500,
+                "tax_charged": 3600.0
+            }
+        ],
+        "total_billed_amount": 83072.0
+    },
+    {
+        "invoice_id": "INV-2026-002",
+        "vendor_name": "Vanguard Logistics",
+        "date": "2026-04-03",
+        "line_items": [
+            {
+                "description": "Warehouse Systems Support",
+                "hours": 14,
+                "billed_rate": 2800,
+                "tax_charged": 7056.0
+            },
+            {
+                "description": "Supply Chain Analytics",
+                "hours": 9,
+                "billed_rate": 3600,
+                "tax_charged": 5832.0
+            }
+        ],
+        "total_billed_amount": 84488.0
+    },
+    {
+        "invoice_id": "INV-2026-003",
+        "vendor_name": "Nimbus Data Systems",
+        "date": "2026-04-08",
+        "line_items": [
+            {
+                "description": "Data Engineering",
+                "hours": 11,
+                "billed_rate": 4800,
+                "tax_charged": 12672.0
+            },
+            {
+                "description": "ETL Monitoring",
+                "hours": 7,
+                "billed_rate": 3400,
+                "tax_charged": 5712.0
+            }
+        ],
+        "total_billed_amount": 94984.0
+    },
+    {
+        "invoice_id": "INV-2026-004",
+        "vendor_name": "Vanguard Logistics",
+        "date": "2026-04-12",
+        "line_items": [
+            {
+                "description": "Fleet Optimization",
+                "hours": 10,
+                "billed_rate": 3900,
+                "tax_charged": 7020.0
+            },
+            {
+                "description": "Warehouse Systems Support",
+                "hours": 6,
+                "billed_rate": 2800,
+                "tax_charged": 3024.0
+            }
+        ],
+        "total_billed_amount": 65844.0
+    },
+    {
+        "invoice_id": "INV-2026-005",
+        "vendor_name": "Apex IT Solutions",
+        "date": "2026-04-16",
+        "line_items": [
+            {
+                "description": "Cybersecurity Audit",
+                "hours": 5,
+                "billed_rate": 5200,
+                "tax_charged": 4680.0
+            },
+            {
+                "description": "Travel Expenses",
+                "hours": 1,
+                "billed_rate": 24500,
+                "tax_charged": 4410.0
+            }
+        ],
+        "total_billed_amount": 59590.0
+    }
+]
