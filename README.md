@@ -1,71 +1,64 @@
 Verifeye: Agentic Forensic Auditor 🕵️‍♂️
-Submission for OpenAI Codex Community Hackathon - Delhi
+Official Submission for the OpenAI Codex Community Hackathon – Delhi (2026)
 
-Verifeye is an autonomous AI Agent designed to combat "Revenue Leakage" in Indian SMEs. By moving beyond static scripts to a truly Agentic Workflow, Verifeye cross-references unstructured invoice data against legal Master Service Agreements (MSAs) to identify financial discrepancies, tax non-compliance, and billing fraud.
+Verifeye is an autonomous AI Agent designed to solve "Revenue Leakage" for Indian SMEs. By moving beyond static automation and into Agentic Reasoning, Verifeye cross-references unstructured invoice data against legal Master Service Agreements (MSAs) to identify financial discrepancies, tax non-compliance, and billing fraud in real-time.
 
-🛑 The Problem
-Indian mid-market firms lose 2-5% of annual revenue to manual billing errors and sophisticated vendor overcharges. Manual auditing is:
+🛑 The Problem: The "Invisible" Loss
+Indian mid-market firms lose 2-5% of annual revenue to billing errors. Manual auditing is:
 
-Slow: Taking days to cross-check line items against complex contracts.
+Slow: It takes days to cross-check line items against complex contracts.
 
-Error-Prone: Missing subtle tax variance or unauthorized rate inflation.
+Passive: Traditional tools find errors but don't act on them.
 
-Passive: Finding the error but leaving the "recovery" process to humans.
+Fragmented: Verifying GSTINs and tax slabs usually requires manual switching between portals.
 
-✅ The Solution: Verifeye
-Verifeye doesn't just scan; it investigates. Built on GPT-4o, the agent uses a chain-of-thought process to autonomously decide which tools to use to validate an invoice's legitimacy.
+✅ The Solution: Verifeye Agentic Workflow
+Verifeye doesn't just scan; it investigates. Built on OpenAI’s GPT-4o, the agent uses a chain-of-thought process to autonomously trigger specialized tools to validate an invoice's legitimacy.
 
-🌟 Key Features
-Agentic Reasoning: Real-time "Thought Traces" show the AI's internal logic as it audits line items.
+🌟 Core Agentic Capabilities
+Autonomous Skill-Calling: The agent intelligently calls modular Python tools (skills.py) to verify GSTINs and calculate tax variances.
 
-Autonomous Skill-Calling: The agent calls specialized Python "Skills" (Plugins) for:
+Forensic Thought Traces: A live "Reasoning Stream" in the UI provides transparency into the agent's logic as it parses data.
 
-GSTIN Validation: Checking vendor legitimacy against simulated government records.
+Auto-Remediation Engine: Once a discrepancy is found, the agent autonomously drafts a professional, legally-sound demand letter for the vendor.
 
-Tax Variance Engine: Calculating precise INR leakage from incorrect tax slabs.
-
-Rate Card Parser: Detecting unauthorized price hikes per service category.
-
-Auto-Remediation: Generates a professional, legally-sound demand letter for the CFO to reclaim lost funds instantly.
-
-Sleek Forensic UI: A premium dark-mode dashboard designed for high-stakes financial environments.
+High-Fidelity Dashboard: A premium, dark-mode command center providing CFO-level insights at a glance.
 
 🛠 Tech Stack
-LLM: OpenAI GPT-4o (via Official Python SDK)
+AI Engine: OpenAI GPT-4o (via Python SDK)
 
-Backend: Python 3.10+
+Framework: Python 3.10+
 
-Frontend: Streamlit (Custom CSS-injected Dark Mode)
+Interface: Streamlit (Custom CSS Dark Theme)
 
-Data Handling: Pandas & JSON
+Data Analysis: Pandas & JSON Logic
 
-Agent Architecture: Function Calling / Tool Selection
+Security: Environment-based API Key management
 
-🚀 Getting Started
-1. Prerequisites
-Ensure you have an OpenAI API Key.
-
+🚀 Quick Start
+1. Installation
 Bash
 pip install streamlit openai pandas
-2. Set Environment Variables
+2. Set Your Environment Variable
 Bash
-# Windows (PowerShell)
-$env:OPENAI_API_KEY="your-key-here"
+# Windows
+set OPENAI_API_KEY="your-api-key-here"
 
-# Mac/Linux/Bash
-export OPENAI_API_KEY="your-key-here"
-3. Run the Application
+# Mac/Linux
+export OPENAI_API_KEY="your-api-key-here"
+3. Launch the Auditor
 Bash
 streamlit run app.py
-📂 Project Structure
-app.py: The high-fidelity dashboard and frontend logic.
+📂 Repository Structure
+app.py: The forensic dashboard and frontend logic.
 
-auditor_agent.py: The "Brain"—OpenAI agentic workflow and tool-calling loop.
+auditor_agent.py: The Agent Brain—handles tool calling and LLM chain-of-thought.
 
-skills.py: Modular Python tools used by the Agent.
+skills.py: Hardcoded forensic tools used by the Agent.
 
-invoices.json & contracts.json: Forensic datasets with injected "fraud" scenarios for demo purposes.
+invoices.json & contracts.json: Structured datasets containing both "Clean" and "Fraudulent" scenarios.
 
-👤 Author
+👤 Project Lead
 Shubham Prasad
+3rd Year B.Tech, Computer Science Engineering
 Delhi Technological University (DTU)
